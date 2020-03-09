@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="none">
+  <parameter name="BrowserType" value="Internet Explorer"/>
+  <parameter name="URL" value="https://www.lcra.org"/>
+  <test name="TC1 IE(failed)" parallel="none">
+    <parameter name="BrowserType" value="Internet Explorer"/>
+    <classes>
+      <class name="TestNG.TC1">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="homePage"/>
+        </methods>
+      </class> <!-- TestNG.TC1 -->
+    </classes>
+  </test> <!-- TC1 IE(failed) -->
+</suite> <!-- Failed suite [Suite] -->
