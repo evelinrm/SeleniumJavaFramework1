@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [Suite]" parallel="none">
+  <parameter name="BrowserType" value="Internet Explorer"/>
+  <parameter name="URL" value="https://www.lcra.org"/>
+  <test name="TC1 IE(failed)" parallel="none">
+    <parameter name="BrowserType" value="Internet Explorer"/>
     <classes>
-      <class name="com.checkingLinks.test.CheckLinksTest">
+      <class name="TestNG.TC1">
         <methods>
-          <include name="afterClass"/>
-          <include name="checkingLinks"/>
           <include name="beforeClass"/>
+          <include name="homePage"/>
         </methods>
-      </class> <!-- com.checkingLinks.test.CheckLinksTest -->
+      </class> <!-- TestNG.TC1 -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- TC1 IE(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.checkingLinks.test.CheckLinksTest">
+      <class name="TestNG.TC1">
         <methods>
-          <include name="afterClass"/>
-          <include name="checkingLinks"/>
-          <include name="beforeClass"/>
+          <include name="homePage"/>
         </methods>
-      </class> <!-- com.checkingLinks.test.CheckLinksTest -->
+      </class> <!-- TestNG.TC1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
