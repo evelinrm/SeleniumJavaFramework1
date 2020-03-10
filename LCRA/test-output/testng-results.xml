@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="45598" started-at="2020-03-10T00:10:43Z" finished-at="2020-03-10T00:11:29Z">
+  <suite name="Suite" duration-ms="17972" started-at="2020-03-10T04:56:16Z" finished-at="2020-03-10T04:56:34Z">
     <groups>
     </groups>
-    <test name="TC1 Chrome" duration-ms="17939" started-at="2020-03-10T00:10:43Z" finished-at="2020-03-10T00:11:01Z">
+    <test name="TC1 Chrome" duration-ms="17972" started-at="2020-03-10T04:56:16Z" finished-at="2020-03-10T04:56:34Z">
       <class name="TestNG.TC1">
-        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:TestNG.TC1@36f0f1be]" name="beforeClass" is-config="true" duration-ms="17448" started-at="2020-03-09T18:10:43Z" finished-at="2020-03-09T18:11:01Z">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:TestNG.TC1@36f0f1be]" name="beforeClass" is-config="true" duration-ms="17340" started-at="2020-03-09T22:56:16Z" finished-at="2020-03-09T22:56:33Z">
           <params>
             <param index="0">
               <value>
@@ -23,71 +23,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="homePage()[pri:0, instance:TestNG.TC1@36f0f1be]" name="homePage" duration-ms="456" started-at="2020-03-09T18:11:01Z" finished-at="2020-03-09T18:11:01Z">
+        <test-method status="PASS" signature="homePage()[pri:0, instance:TestNG.TC1@36f0f1be]" name="homePage" duration-ms="557" started-at="2020-03-09T22:56:33Z" finished-at="2020-03-09T22:56:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePage -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:TestNG.TC1@36f0f1be]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-03-09T18:11:01Z" finished-at="2020-03-09T18:11:01Z">
+        <test-method status="PASS" signature="homePagesysout()[pri:0, instance:TestNG.TC1@36f0f1be]" name="homePagesysout" duration-ms="33" started-at="2020-03-09T22:56:34Z" finished-at="2020-03-09T22:56:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePagesysout -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:TestNG.TC1@36f0f1be]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-03-09T22:56:34Z" finished-at="2020-03-09T22:56:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- TestNG.TC1 -->
     </test> <!-- TC1 Chrome -->
-    <test name="TC1 FF" duration-ms="17752" started-at="2020-03-10T00:11:01Z" finished-at="2020-03-10T00:11:19Z">
-      <class name="TestNG.TC1">
-        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:TestNG.TC1@2893de87]" name="beforeClass" is-config="true" duration-ms="17425" started-at="2020-03-09T18:11:01Z" finished-at="2020-03-09T18:11:19Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://www.lcra.org]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="homePage()[pri:0, instance:TestNG.TC1@2893de87]" name="homePage" duration-ms="322" started-at="2020-03-09T18:11:19Z" finished-at="2020-03-09T18:11:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- homePage -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:TestNG.TC1@2893de87]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-03-09T18:11:19Z" finished-at="2020-03-09T18:11:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- TestNG.TC1 -->
-    </test> <!-- TC1 FF -->
-    <test name="TC1 IE" duration-ms="9847" started-at="2020-03-10T00:11:19Z" finished-at="2020-03-10T00:11:29Z">
-      <class name="TestNG.TC1">
-        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:TestNG.TC1@212bf671]" name="beforeClass" is-config="true" duration-ms="7314" started-at="2020-03-09T18:11:19Z" finished-at="2020-03-09T18:11:26Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://www.lcra.org]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Internet Explorer]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="homePage()[pri:0, instance:TestNG.TC1@212bf671]" name="homePage" duration-ms="2530" started-at="2020-03-09T18:11:26Z" finished-at="2020-03-09T18:11:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- homePage -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:TestNG.TC1@212bf671]" name="afterClass" is-config="true" duration-ms="1" started-at="2020-03-09T18:11:29Z" finished-at="2020-03-09T18:11:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- TestNG.TC1 -->
-    </test> <!-- TC1 IE -->
   </suite> <!-- Suite -->
 </testng-results>

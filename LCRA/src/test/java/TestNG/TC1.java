@@ -3,6 +3,7 @@ package TestNG;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -13,8 +14,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class TC1 {
-
-	static String driverPath = "IE driver path";
+	
 	private WebDriver driver;
 
 	By logoLocator = By.cssSelector("div[class='lcra-logo white']");
@@ -36,8 +36,11 @@ public class TC1 {
 		} else if (browserType.equalsIgnoreCase("Internet Explorer")) {
 			System.setProperty("webdriver.ie.driver", "./src/test/resources/drivers/IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
+		} else if (browserType.equalsIgnoreCase("Edge")) {
+			System.setProperty("webdriver.edge.driver", "./src/test/resources/drivers/MicrosoftWebDriver.exe");
+			driver = new EdgeDriver();
 		}
-
+		
 		driver.manage().window().maximize();
 		driver.get(url);
 		System.out.println("Opening:" + browserType + " =)");
@@ -62,6 +65,16 @@ public class TC1 {
 		driver.findElement(ourMissionLocator).isDisplayed();
 		System.out.println("Se muestra Our Mission Msg");
 
+	}
+	
+	@Test
+	public void homePagesysout() {
+		// Explicit wait
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.presenceOfElementLocated(logoLocator));
+		
+		System.out.println("Si se pudo alv");
+		System.out.println("2o metodo");
 	}
 
 	@AfterClass
