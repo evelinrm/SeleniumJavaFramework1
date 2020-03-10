@@ -31,42 +31,28 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">TC1 IE</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0</td><td class="numi">0.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">TC1 Chrome</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">17.9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">TC1 FF</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">17.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">TC1 IE</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">9.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi">0</td><td class="numi">45.6 seconds</td><td colspan="2">&nbsp;</td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">TC1 IE &#8212; failed (configuration methods)</th></tr>
-<tr class="failedodd"><td rowspan="1">TestNG.TC1</td><td><a href="#m1"><b>beforeClass</b>  </a></td><td class="numi">1</td><td>1583795069143</td><td class="numi">0</td></tr>
-<tr><th colspan="4">TC1 IE &#8212; skipped (configuration methods)</th></tr>
-<tr class="skippedodd"><td rowspan="1">TestNG.TC1</td><td><a href="#m2"><b>afterClass</b>  </a></td><td class="numi">1</td><td>1583795069465</td><td class="numi">0</td></tr>
-<tr><th colspan="4">TC1 IE &#8212; skipped</th></tr>
-<tr class="skippedodd"><td rowspan="1">TestNG.TC1</td><td><a href="#m3"><b>homePage</b>  </a></td><td class="numi">1</td><td>1583795069456</td><td class="numi">5</td></tr>
+<tr><th colspan="4">TC1 Chrome &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">TestNG.TC1</td><td><a href="#m1"><b>homePage</b>  </a></td><td class="numi">1</td><td>1583799061116</td><td class="numi">456</td></tr>
+<tr><th colspan="4">TC1 FF &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">TestNG.TC1</td><td><a href="#m2"><b>homePage</b>  </a></td><td class="numi">1</td><td>1583799079050</td><td class="numi">322</td></tr>
+<tr><th colspan="4">TC1 IE &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">TestNG.TC1</td><td><a href="#m3"><b>homePage</b>  </a></td><td class="numi">1</td><td>1583799086704</td><td class="numi">2530</td></tr>
 </table>
+<h1>TC1 Chrome</h1>
+<h2 id="m1">TestNG.TC1:homePage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>TC1 FF</h1>
+<h2 id="m2">TestNG.TC1:homePage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
 <h1>TC1 IE</h1>
-<h2 id="m1">TestNG.TC1:beforeClass</h2>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
-<tr class="param stripe"><td>https://www.lcra.org</td>
-<td>Internet Explorer</td>
-</tr>
-<tr><td style="padding-left:3em" colspan="2">
-<p>The driver executable does not exist: C:\Users\eve_3\git\SeleniumJavaFramework1\LCRA\IE driver pathIEDriverServer.exe</p>
-com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-<br/>at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
-<br/>at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-<br/>at org.openqa.selenium.ie.InternetExplorerDriverService.access$000(InternetExplorerDriverService.java:35)
-<br/>at org.openqa.selenium.ie.InternetExplorerDriverService$Builder.findDefaultExecutable(InternetExplorerDriverService.java:175)
-<br/>at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-<br/>at org.openqa.selenium.ie.InternetExplorerDriver.setupService(InternetExplorerDriver.java:281)
-<br/>at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:211)
-<br/>at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:150)
-<br/>at TestNG.TC1.beforeClass(TC1.java:38)
-<br/>25 lines not shown
-</td></tr>
-</table>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">TestNG.TC1:afterClass</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
 <h2 id="m3">TestNG.TC1:homePage</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

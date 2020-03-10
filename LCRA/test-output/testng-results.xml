@@ -1,13 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="351" started-at="2020-03-09T23:04:29Z" finished-at="2020-03-09T23:04:29Z">
+  <suite name="Suite" duration-ms="45598" started-at="2020-03-10T00:10:43Z" finished-at="2020-03-10T00:11:29Z">
     <groups>
     </groups>
-    <test name="TC1 IE" duration-ms="351" started-at="2020-03-09T23:04:29Z" finished-at="2020-03-09T23:04:29Z">
+    <test name="TC1 Chrome" duration-ms="17939" started-at="2020-03-10T00:10:43Z" finished-at="2020-03-10T00:11:01Z">
       <class name="TestNG.TC1">
-        <test-method status="FAIL" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:TestNG.TC1@36f0f1be]" name="beforeClass" is-config="true" duration-ms="0" started-at="2020-03-09T17:04:29Z" finished-at="2020-03-09T17:04:29Z">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:TestNG.TC1@36f0f1be]" name="beforeClass" is-config="true" duration-ms="17448" started-at="2020-03-09T18:10:43Z" finished-at="2020-03-09T18:11:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.lcra.org]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="homePage()[pri:0, instance:TestNG.TC1@36f0f1be]" name="homePage" duration-ms="456" started-at="2020-03-09T18:11:01Z" finished-at="2020-03-09T18:11:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePage -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:TestNG.TC1@36f0f1be]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-03-09T18:11:01Z" finished-at="2020-03-09T18:11:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- TestNG.TC1 -->
+    </test> <!-- TC1 Chrome -->
+    <test name="TC1 FF" duration-ms="17752" started-at="2020-03-10T00:11:01Z" finished-at="2020-03-10T00:11:19Z">
+      <class name="TestNG.TC1">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:TestNG.TC1@2893de87]" name="beforeClass" is-config="true" duration-ms="17425" started-at="2020-03-09T18:11:01Z" finished-at="2020-03-09T18:11:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.lcra.org]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="homePage()[pri:0, instance:TestNG.TC1@2893de87]" name="homePage" duration-ms="322" started-at="2020-03-09T18:11:19Z" finished-at="2020-03-09T18:11:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePage -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:TestNG.TC1@2893de87]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-03-09T18:11:19Z" finished-at="2020-03-09T18:11:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- TestNG.TC1 -->
+    </test> <!-- TC1 FF -->
+    <test name="TC1 IE" duration-ms="9847" started-at="2020-03-10T00:11:19Z" finished-at="2020-03-10T00:11:29Z">
+      <class name="TestNG.TC1">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:TestNG.TC1@212bf671]" name="beforeClass" is-config="true" duration-ms="7314" started-at="2020-03-09T18:11:19Z" finished-at="2020-03-09T18:11:26Z">
           <params>
             <param index="0">
               <value>
@@ -20,57 +76,14 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalStateException">
-            <message>
-              <![CDATA[The driver executable does not exist: C:\Users\eve_3\git\SeleniumJavaFramework1\LCRA\IE driver pathIEDriverServer.exe]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\eve_3\git\SeleniumJavaFramework1\LCRA\IE driver pathIEDriverServer.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-	at org.openqa.selenium.ie.InternetExplorerDriverService.access$000(InternetExplorerDriverService.java:35)
-	at org.openqa.selenium.ie.InternetExplorerDriverService$Builder.findDefaultExecutable(InternetExplorerDriverService.java:175)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.ie.InternetExplorerDriver.setupService(InternetExplorerDriver.java:281)
-	at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:211)
-	at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:150)
-	at TestNG.TC1.beforeClass(TC1.java:38)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="SKIP" signature="homePage()[pri:0, instance:TestNG.TC1@36f0f1be]" name="homePage" duration-ms="5" started-at="2020-03-09T17:04:29Z" finished-at="2020-03-09T17:04:29Z">
+        <test-method status="PASS" signature="homePage()[pri:0, instance:TestNG.TC1@212bf671]" name="homePage" duration-ms="2530" started-at="2020-03-09T18:11:26Z" finished-at="2020-03-09T18:11:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePage -->
-        <test-method status="SKIP" signature="afterClass()[pri:0, instance:TestNG.TC1@36f0f1be]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-03-09T17:04:29Z" finished-at="2020-03-09T17:04:29Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:TestNG.TC1@212bf671]" name="afterClass" is-config="true" duration-ms="1" started-at="2020-03-09T18:11:29Z" finished-at="2020-03-09T18:11:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

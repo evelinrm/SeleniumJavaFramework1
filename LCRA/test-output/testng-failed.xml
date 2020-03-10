@@ -9,7 +9,11 @@
       <class name="TestNG.TC1">
         <methods>
           <include name="beforeClass"/>
+          <include name="beforeClass"/>
+          <include name="beforeClass"/>
           <include name="homePage"/>
+          <include name="afterClass"/>
+          <include name="afterClass"/>
         </methods>
       </class> <!-- TestNG.TC1 -->
     </classes>

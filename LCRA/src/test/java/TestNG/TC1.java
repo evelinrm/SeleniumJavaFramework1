@@ -34,21 +34,21 @@ public class TC1 {
 			System.setProperty("webdriver.gecko.driver", "./src/test/resources/drivers/geckodriver.exe");
 			driver = new FirefoxDriver();
 		} else if (browserType.equalsIgnoreCase("Internet Explorer")) {
-			System.setProperty("webdriver.ie.driver", driverPath+"IEDriverServer.exe");
+			System.setProperty("webdriver.ie.driver", "./src/test/resources/drivers/IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
 		}
 
 		driver.manage().window().maximize();
 		driver.get(url);
-		System.out.println("Opening:" + browserType + "=)");
-		
+		System.out.println("Opening:" + browserType + " =)");
+
 	}
 
 	@Test
-	public void homePage() {
+	public void homePage() throws InterruptedException {
 
 		// Explicit wait
-		WebDriverWait wait = new WebDriverWait(driver, 7);
+		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.presenceOfElementLocated(logoLocator));
 
 		driver.findElement(logoLocator).isDisplayed();
